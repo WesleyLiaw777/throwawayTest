@@ -3,7 +3,7 @@ const { KeyClient } = require("@azure/keyvault-keys");
 
 async function getKey() {
   const credential = new DefaultAzureCredential();
-  const vaultUrl = "supertestkeyvault.vault.azure.net";
+  const vaultUrl = "supertestkeyvault.privatelink.vault.azure.net";
   const client = new KeyClient(vaultUrl, credential);
 
   try {
